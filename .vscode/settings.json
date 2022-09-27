@@ -1,0 +1,34 @@
+{
+    "liveSassCompile.settings.formats": [
+
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/public/assets/css",
+            "savePathSegmentKeys": null,
+            "savePathReplaceSegmentsWith": null
+        }
+    ],
+    "liveSassCompile.settings.compileOnWatch": true,
+    "liveSassCompile.settings.generateMap": false,
+    "cSpell.words": [
+        "aboutpc",
+        "aboutsp",
+        "abouttab",
+        "contactpc",
+        "contactsp",
+        "contacttab",
+        "contacttext",
+        "destyle",
+        "DIGGIN",
+        "DIGSMILE",
+        "fontawesome",
+        "fvtext",
+        "imgpc",
+        "imgtab",
+        "logopc",
+        "scrolldown",
+        "takaki"
+    ]
+}
