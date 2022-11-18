@@ -1,0 +1,111 @@
+@use "../../foundation/import";
+@use "../../mixin" as m;
+// Base (Mobile First)
+
+// sidebarセクション
+.p-sidebar {
+  padding-top: 30px;
+  &__movie-wrapper {
+    padding: 29px 0;
+  }
+  &__ttl {
+    width: 91.467%;
+    height: 40px;
+    font-size: 2.2rem;
+    font-weight: bold;
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 7px;
+      height: 30px;
+      border-left: 7px solid import.$color-blue;
+      vertical-align: middle;
+      padding-right: 10px;
+    }
+  }
+  &__movie{
+    width: 100%;
+    height: 208px;
+  }
+  &__store-wrapper{
+    padding-top: 2px;
+    padding-bottom: 18px;
+  }
+  &__img-wrapper{
+    width: 100%;
+    height: 228px;
+  }
+  &__store-text{
+    line-height: 2.21;
+  }
+  table{
+    color: import.$color-blue;
+    font-weight: bold;
+    padding-bottom: 14px;
+    tr:first-child th{
+      padding: 0;
+    }
+    th{
+      padding-top: 11px;
+      font-weight: normal;
+    }
+    td{
+      height: 81px;
+      transform: translate(0,-5px);
+      background-image : linear-gradient(to right, import.$color-date, import.$color-date 2px, transparent 1px, transparent 3px);  /* 幅1の線を作る */
+      background-size: 3px 1px;          /* グラデーションの幅・高さを指定 */
+      background-position: left bottom;  /* 背景の開始位置を指定 */
+      background-repeat: repeat-x;       /* 横向きにのみ繰り返す */
+    }
+  }
+  &__blog-link{
+    line-height: 2.3125;
+    border-bottom: 1px solid import.$color-blue;
+}
+&__banner-wrapper{
+  width: 100%;
+  height: 94px;
+  background-color: import.$color-border;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1ch;
+  margin-top: 10px;
+}
+&__banner-store-wrapper{
+  margin-top: 30px;
+}
+}
+
+@include m.mq(pc) {
+  .p-sidebar {
+    width: 258px;
+    padding-top: 40px;
+    &__movie{
+      width: 100%;
+      height: 157px;
+    }
+    &__store-wrapper{
+      padding-top: 2px;
+      padding-bottom: 24px;
+    }
+    &__store-text{
+      line-height: 2.21;
+      font-size: 1.4rem;
+      padding-top: 7px;
+    }
+    table{
+      th{
+        padding-top: 10px;
+      }
+      td{
+        height: 75px;
+        transform: translate(0,-3px);
+      }
+    }
+    &__blog-link{
+      line-height: 1.75;
+  }
+  }
+  }
