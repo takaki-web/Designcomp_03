@@ -1,9 +1,9 @@
-@use "../../foundation/import";
-@use "../../mixin" as m;
+@use "../foundation/import";
+@use "../mixin" as m;
 // Base (Mobile First)
 
 // sidebarセクション
-.p-sidebar {
+.l-index-sidebar {
   padding-top: 30px;
   &__movie-wrapper {
     padding: 29px 0;
@@ -79,7 +79,7 @@
 }
 
 @include m.mq(pc) {
-  .p-sidebar {
+  .l-index-sidebar {
     width: 258px;
     padding-top: 40px;
     &__movie{
