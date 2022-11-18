@@ -4,21 +4,21 @@
 
 // voiceセクション
 .p-index-voice {
-  &__card{
+  &__card {
     margin-top: 24px;
     padding: 16px;
     border: 1px solid import.$color-frame;
   }
-  &__img-wrapper{
+  &__img-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: translate(-4px,0);
+    transform: translate(-4px, 0);
   }
-  &__content{
+  &__content {
     padding-top: 16px;
   }
-  &__heading{
+  &__heading {
     font-size: 1.8rem;
     color: import.$color-blue;
     font-weight: bold;
@@ -26,34 +26,33 @@
     border-bottom: 1px solid import.$color-border;
     margin-bottom: 21px;
   }
-  &__text{
+  &__text {
     line-height: 1.75;
     margin-bottom: 30px;
   }
-  &__date{
+  &__date {
     text-align: right;
   }
 }
 
 @include m.mq(pc) {
   .p-index-voice {
-    &__card{
+    &__card {
       padding: 25px;
       padding-right: 22px;
       width: 97.34%;
       display: flex;
     }
-    &__content{
+    &__content {
       padding-top: 0;
       padding-left: 25px;
     }
-    &__heading{
+    &__heading {
       font-size: 2.2rem;
       line-height: 1.45;
     }
-    &__text{
+    &__text {
       margin-bottom: 45px;
     }
   }
-
 }

@@ -59,7 +59,7 @@ table {
   /* ハンバーガーメニュー押してactiveクラスを付いたら表示する */
 }
 .l-header__text-wrapper {
-  background-color: #00A0E9;
+  background-color: #00a0e9;
   height: 53px;
   width: 100%;
 }
@@ -100,7 +100,7 @@ table {
 .l-header__menu {
   width: 92%;
   height: 47px;
-  background-color: #00A0E9;
+  background-color: #00a0e9;
   margin: 0 auto;
   position: relative;
 }
@@ -242,7 +242,7 @@ table {
   .l-header__menu {
     width: 92%;
     height: 47px;
-    background-color: #00A0E9;
+    background-color: #00a0e9;
     margin: 0 auto;
     position: relative;
   }
@@ -315,7 +315,7 @@ table {
 .l-footer__menu {
   width: 92%;
   height: 47px;
-  background-color: #00A0E9;
+  background-color: #00a0e9;
   margin: 0 auto;
   position: relative;
 }
@@ -423,8 +423,8 @@ table {
   .l-footer__nav-wrapper {
     width: 100vw;
     height: 60px;
-    border: 1px solid #EBECE7;
-    background-color: #00A0E9;
+    border: 1px solid #ebece7;
+    background-color: #00a0e9;
   }
   .l-footer__nav-lists {
     max-width: 1010px;
@@ -505,7 +505,7 @@ table {
   content: "";
   width: 7px;
   height: 30px;
-  border-left: 7px solid #00A0E9;
+  border-left: 7px solid #00a0e9;
   vertical-align: middle;
   padding-right: 10px;
 }
@@ -525,7 +525,7 @@ table {
   line-height: 2.21;
 }
 .l-index-sidebar table {
-  color: #00A0E9;
+  color: #00a0e9;
   font-weight: bold;
   padding-bottom: 14px;
 }
@@ -539,19 +539,19 @@ table {
 .l-index-sidebar table td {
   height: 81px;
   transform: translate(0, -5px);
-  background-image: linear-gradient(to right, #AAAAAA, #AAAAAA 2px, transparent 1px, transparent 3px); /* 幅1の線を作る */
+  background-image: linear-gradient(to right, #aaaaaa, #aaaaaa 2px, transparent 1px, transparent 3px); /* 幅1の線を作る */
   background-size: 3px 1px; /* グラデーションの幅・高さを指定 */
   background-position: left bottom; /* 背景の開始位置を指定 */
   background-repeat: repeat-x; /* 横向きにのみ繰り返す */
 }
 .l-index-sidebar__blog-link {
   line-height: 2.3125;
-  border-bottom: 1px solid #00A0E9;
+  border-bottom: 1px solid #00a0e9;
 }
 .l-index-sidebar__banner-wrapper {
   width: 100%;
   height: 94px;
-  background-color: #CCCCCC;
+  background-color: #cccccc;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -610,7 +610,7 @@ table {
 .c-title {
   width: 100%;
   height: 50px;
-  background-color: #E7ECD5;
+  background-color: #e7ecd5;
   padding: 10px;
   font-size: 2.2rem;
   font-weight: bold;
@@ -620,7 +620,7 @@ table {
   content: "";
   width: 7px;
   height: 30px;
-  border-left: 7px solid #00A0E9;
+  border-left: 7px solid #00a0e9;
   vertical-align: middle;
   padding-right: 10px;
 }
@@ -637,7 +637,7 @@ table {
   height: 36px;
   font-weight: bold;
   font-size: 1.4rem;
-  background-color: #F39800;
+  background-color: #f39800;
   border-radius: 6px;
   color: #fff;
   padding: 12px 21.1px 7px 38px;
@@ -658,7 +658,7 @@ table {
   width: 10px;
 }
 .c-button:hover {
-  background-color: #F39800;
+  background-color: #f39800;
   filter: brightness(150%);
 }
 
@@ -680,7 +680,7 @@ table {
   .p-index-fv__nav-wrapper {
     width: 100vw;
     height: 95px;
-    border: 1px solid #EBECE7;
+    border: 1px solid #ebece7;
   }
   .p-index-fv__nav-lists {
     max-width: 1010px;
@@ -692,7 +692,7 @@ table {
   }
   .p-index-fv__nav-lists .p-fv__nav-item:last-child::after {
     content: "";
-    border-left: 1px solid #CCCCCC;
+    border-left: 1px solid #cccccc;
     display: block;
     height: 48px;
     width: 1px;
@@ -709,7 +709,7 @@ table {
   }
   .p-index-fv__nav-item:before {
     content: "";
-    border-left: 1px solid #CCCCCC;
+    border-left: 1px solid #cccccc;
     display: block;
     height: 48px;
     width: 1px;
@@ -725,13 +725,13 @@ table {
   margin-top: 21px;
 }
 .p-index-news table th {
-  color: #AAAAAA;
+  color: #aaaaaa;
   font-weight: normal;
   height: 24px;
   padding-bottom: 9px;
 }
 .p-index-news table td {
-  color: #00A0E9;
+  color: #00a0e9;
   font-weight: bold;
   font-size: 2.2rem;
   line-height: 1.45;
@@ -748,13 +748,13 @@ table {
     margin-top: 21px;
   }
   .p-index-news table th {
-    color: #AAAAAA;
+    color: #aaaaaa;
     font-weight: normal;
     height: 24px;
     padding-bottom: 9px;
   }
   .p-index-news table td {
-    color: #00A0E9;
+    color: #00a0e9;
     font-weight: bold;
     font-size: 2.2rem;
     line-height: 1.45;
@@ -787,7 +787,7 @@ table {
 .p-index-voice__card {
   margin-top: 24px;
   padding: 16px;
-  border: 1px solid #CECEBF;
+  border: 1px solid #cecebf;
 }
 .p-index-voice__img-wrapper {
   display: flex;
@@ -800,10 +800,10 @@ table {
 }
 .p-index-voice__heading {
   font-size: 1.8rem;
-  color: #00A0E9;
+  color: #00a0e9;
   font-weight: bold;
   line-height: 1.77;
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid #cccccc;
   margin-bottom: 21px;
 }
 .p-index-voice__text {
@@ -857,7 +857,7 @@ table {
   }
   .p-index-contact__img-wrapper01::after {
     content: "";
-    border-right: 1px solid #CCCCCC;
+    border-right: 1px solid #cccccc;
     width: 1px;
     height: 64px;
     display: block;

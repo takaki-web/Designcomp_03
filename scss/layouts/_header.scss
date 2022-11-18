@@ -5,46 +5,46 @@
 // headerセクション
 .l-header {
   height: 217px;
-  &__text-wrapper{
+  &__text-wrapper {
     background-color: import.$color-blue;
     height: 53px;
     width: 100%;
   }
-  .l-header__text{
+  .l-header__text {
     font-size: 1.4rem;
     padding-top: 5px;
     padding-left: 1.333vw;
     line-height: 1.57;
     color: import.$color-white;
   }
-  &__content-wrapper{
+  &__content-wrapper {
     position: relative;
     height: 107px;
   }
-  &__img-wrapper01{
+  &__img-wrapper01 {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1ch;
     padding-top: 16px;
   }
-  &__svg-wrapper{
+  &__svg-wrapper {
     max-width: 176px;
-    svg{
+    svg {
       width: 100%;
     }
   }
-  &__img-wrapper02{
+  &__img-wrapper02 {
     position: absolute;
     top: 65px;
     left: 4.267vw;
   }
-  &__img-wrapper03{
+  &__img-wrapper03 {
     position: absolute;
     top: 65px;
     right: 4.267vw;
   }
-  &__menu{
+  &__menu {
     width: 92%;
     height: 47px;
     background-color: import.$color-blue;
@@ -70,104 +70,103 @@
     -webkit-transition: 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
-    transform: translate(8px,0px);
-    }
-    &__burger-btn span:nth-child(1) {
-      top: 10px;
-    }
-    &__burger-btn span:nth-child(2) {
-      top: 21px;
-    }
-    &__burger-btn span:nth-child(3) {
-      top: 33px;
-    }
-    /* ナビ開いてる時のバツボタン */
-&__burger-btn.active span:nth-child(1) {
-  top: 20px;
-  left: 8px;
-  background: #fff;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
+    transform: translate(8px, 0px);
+  }
+  &__burger-btn span:nth-child(1) {
+    top: 10px;
+  }
+  &__burger-btn span:nth-child(2) {
+    top: 21px;
+  }
+  &__burger-btn span:nth-child(3) {
+    top: 33px;
+  }
+  /* ナビ開いてる時のバツボタン */
+  &__burger-btn.active span:nth-child(1) {
+    top: 20px;
+    left: 8px;
+    background: #fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
 
-&__burger-btn.active span:nth-child(2),
-&__burger-btn.active span:nth-child(3) {
-  top: 20px;
-  left: 8px;
-  background: #fff;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-/* ナビメニュー内 */
-&__burger-menu {
-  display: none;
-  top: 0;
-  left: 0;
-  color: #fff;
-  width: 100vw;
-  height: 100px;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
-  font-size: 2.4rem;
-}
+  &__burger-btn.active span:nth-child(2),
+  &__burger-btn.active span:nth-child(3) {
+    top: 20px;
+    left: 8px;
+    background: #fff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  /* ナビメニュー内 */
+  &__burger-menu {
+    display: none;
+    top: 0;
+    left: 0;
+    color: #fff;
+    width: 100vw;
+    height: 100px;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+    font-size: 2.4rem;
+  }
 
-&__burger-menu ul {
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-  padding-top: 47px;
-  &__burger-menu-link:first-child{
-    padding-top: 28px;
+  &__burger-menu ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    padding-top: 47px;
+    &__burger-menu-link:first-child {
+      padding-top: 28px;
+    }
+  }
+
+  &__burger-menu-link {
+    list-style-type: none;
+    padding: 0;
+    width: 160px;
+    transition: 0.4s all;
+    padding-top: 7px;
+  }
+  &__burger-menu-link:last-child {
+    padding-bottom: 0;
+  }
+
+  &__burger-menu-link a {
+    display: block;
+    color: import.$color-black;
+    height: 36px;
+    padding-left: 1px;
+    text-decoration: none;
+    &::before {
+      content: url(https://takaki-blog.com/Designcomp_01/img/sp/グループ-51.svg);
+      padding-right: 9px;
+      vertical-align: middle;
+    }
+  }
+
+  /* ハンバーガーメニュー押してactiveクラスを付いたら表示する */
+  &__burger-menu.active {
+    display: block;
+    visibility: visible;
+  }
+
+  &.height {
+    height: 559px;
   }
 }
-
-&__burger-menu-link {
-  list-style-type: none;
-  padding: 0;
-  width: 160px;
-  transition: 0.4s all;
-  padding-top: 7px;
-}
-&__burger-menu-link:last-child {
-  padding-bottom: 0;
-}
-
-&__burger-menu-link a {
-  display: block;
-  color: import.$color-black;
-  height: 36px;
-  padding-left: 1px;
-  text-decoration: none;
-  &::before{
-    content:url(https://takaki-blog.com/Designcomp_01/img/sp/グループ-51.svg);
-    padding-right: 9px;
-    vertical-align: middle;
-  }
-}
-
-/* ハンバーガーメニュー押してactiveクラスを付いたら表示する */
-&__burger-menu.active {
-  display: block;
-  visibility: visible;
-}
-
-&.height{
-  height: 559px;
-}
-
-    }
 
 @include m.mq(pc) {
   .l-header {
     height: 124px;
-    &__text-wrapper{
+    &__text-wrapper {
       height: 26px;
     }
-    .l-header__text{
+    .l-header__text {
       padding-left: min(18.438vw, 295px); //最大値を設定したい場合
     }
-    &__content-wrapper{
+    &__content-wrapper {
       position: relative;
       max-width: 1300px;
       width: 100vw;
@@ -176,28 +175,28 @@
       display: flex;
       justify-content: space-between;
     }
-    &__img-wrapper01{
+    &__img-wrapper01 {
       display: flex;
       justify-content: space-between;
       padding-top: 6px;
       width: min(59.25vw, 948px); //最大値を設定したい場合;
-      img{
+      img {
         max-width: 248px;
         width: 46%;
       }
     }
-    &__svg-wrapper{
+    &__svg-wrapper {
       max-width: 300px;
     }
-    &__img-wrapper03{
+    &__img-wrapper03 {
       position: static;
       padding-top: 17px;
-      img{
+      img {
         max-width: 335px;
         width: 90%;
       }
     }
-    &__menu{
+    &__menu {
       width: 92%;
       height: 47px;
       background-color: import.$color-blue;
@@ -223,16 +222,16 @@
       -webkit-transition: 0.3s ease-in-out;
       -moz-transition: 0.3s ease-in-out;
       transition: 0.3s ease-in-out;
-      transform: translate(8px,0px);
-      }
-      .burger-btn span:nth-child(1) {
-        top: 10px;
-      }
-      .burger-btn span:nth-child(2) {
-        top: 21px;
-      }
-      .burger-btn span:nth-child(3) {
-        top: 33px;
-      }
-      }
+      transform: translate(8px, 0px);
+    }
+    .burger-btn span:nth-child(1) {
+      top: 10px;
+    }
+    .burger-btn span:nth-child(2) {
+      top: 21px;
+    }
+    .burger-btn span:nth-child(3) {
+      top: 33px;
+    }
+  }
 }

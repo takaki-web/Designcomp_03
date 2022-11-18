@@ -16,7 +16,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: メイリオ, serif;
-  font-weight:normal;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   min-width: 375px;
@@ -28,23 +28,22 @@ table {
   border-collapse: separate;
   border-spacing: 1px;
 }
-.visible-pc{
+.visible-pc {
   display: none;
 }
 @include m.mq(pc) {
-  .visible-pc{
+  .visible-pc {
     display: block;
   }
-  .visible-sp{
+  .visible-sp {
     display: none;
   }
-  .container{
+  .container {
     display: flex;
     margin: 0 auto;
-    flex-direction:row;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     max-width: 1010px;
   }
-
 }

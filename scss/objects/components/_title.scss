@@ -3,24 +3,24 @@
 // Base (Mobile First)
 
 .c-title {
-    width: 100%;
-    height: 50px;
-    background-color: import.$color-title;
-    padding: 10px;
-    font-size: 2.2rem;
-    font-weight: bold;
-    &::before {
-      display: inline-block;
-      content: "";
-      width: 7px;
-      height: 30px;
-      border-left: 7px solid import.$color-blue;
-      vertical-align: middle;
-      padding-right: 10px;
-    }
+  width: 100%;
+  height: 50px;
+  background-color: import.$color-title;
+  padding: 10px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  &::before {
+    display: inline-block;
+    content: "";
+    width: 7px;
+    height: 30px;
+    border-left: 7px solid import.$color-blue;
+    vertical-align: middle;
+    padding-right: 10px;
+  }
 }
 @include m.mq(pc) {
   .c-title {
-      width: 97.34%;
+    width: 97.34%;
   }
 }

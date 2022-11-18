@@ -4,10 +4,10 @@
 
 // contactセクション
 .p-index-contact {
-  &__wrapper{
+  &__wrapper {
     padding-top: 65px;
   }
-  &__img-wrapper{
+  &__img-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +17,7 @@
 
 @include m.mq(pc) {
   .p-index-contact {
-    &__wrapper{
+    &__wrapper {
       padding-top: 10px;
       height: 134px;
       width: 100%;
@@ -28,8 +28,8 @@
       align-items: center;
       justify-content: center;
     }
-    &__img-wrapper01{
-      &::after{
+    &__img-wrapper01 {
+      &::after {
         content: "";
         border-right: 1px solid import.$color-border;
         width: 1px;
@@ -40,5 +40,4 @@
       }
     }
   }
-
 }

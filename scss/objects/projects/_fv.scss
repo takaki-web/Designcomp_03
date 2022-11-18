@@ -4,7 +4,7 @@
 
 // fvセクション
 .p-index-fv {
-  &__img-wrapper{
+  &__img-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -14,21 +14,21 @@
 }
 
 @include m.mq(pc) {
-  .p-index-fv{
-    &__nav-wrapper{
+  .p-index-fv {
+    &__nav-wrapper {
       width: 100vw;
       height: 95px;
       border: 1px solid import.$color-line;
     }
-    &__nav-lists{
+    &__nav-lists {
       max-width: 1010px;
       width: 100%;
       height: 95px;
       margin: 0 auto;
       display: flex;
       font-weight: bold;
-      .p-fv__nav-item:last-child{
-        &::after{
+      .p-fv__nav-item:last-child {
+        &::after {
           content: "";
           border-left: 1px solid import.$color-border;
           display: block;
@@ -36,17 +36,17 @@
           width: 1px;
           position: absolute;
           right: 0;
-          }
+        }
       }
     }
-    &__nav-item{
+    &__nav-item {
       position: relative;
       width: 200px;
       padding-left: 0px;
       display: flex;
       align-items: center;
       justify-content: center;
-      &:before{
+      &:before {
         content: "";
         border-left: 1px solid import.$color-border;
         display: block;
