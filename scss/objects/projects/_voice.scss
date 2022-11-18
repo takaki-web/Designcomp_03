@@ -3,7 +3,7 @@
 // Base (Mobile First)
 
 // voiceセクション
-.p-voice {
+.p-index-voice {
   &__card{
     margin-top: 24px;
     padding: 16px;
@@ -36,7 +36,7 @@
 }
 
 @include m.mq(pc) {
-  .p-voice {
+  .p-index-voice {
     &__card{
       padding: 25px;
       padding-right: 22px;

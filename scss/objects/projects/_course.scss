@@ -3,7 +3,7 @@
 // Base (Mobile First)
 
 // courseセクション
-.p-course {
+.p-index-course {
   padding-bottom: 39px;
   &__text {
     padding-top: 20px;
@@ -19,7 +19,7 @@
 }
 
 @include m.mq(pc) {
-  .p-course {
+  .p-index-course {
     &__img-wrapper02 {
       padding-left: min(0.75vw, 12px); //最大値を設定したい場合
     }

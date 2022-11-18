@@ -3,7 +3,7 @@
 // Base (Mobile First)
 
 // fvセクション
-.p-fv {
+.p-index-fv {
   &__img-wrapper{
     width: 100%;
     display: flex;
@@ -14,7 +14,7 @@
 }
 
 @include m.mq(pc) {
-  .p-fv{
+  .p-index-fv{
     &__nav-wrapper{
       width: 100vw;
       height: 95px;

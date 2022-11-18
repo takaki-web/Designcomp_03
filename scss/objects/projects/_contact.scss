@@ -3,7 +3,7 @@
 // Base (Mobile First)
 
 // contactセクション
-.p-contact {
+.p-index-contact {
   &__wrapper{
     padding-top: 65px;
   }
@@ -16,7 +16,7 @@
 }
 
 @include m.mq(pc) {
-  .p-contact {
+  .p-index-contact {
     &__wrapper{
       padding-top: 10px;
       height: 134px;
