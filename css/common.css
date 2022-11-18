@@ -2,6 +2,8 @@
 *,
 *:before,
 *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
@@ -38,11 +40,9 @@ table {
   .visible-pc {
     display: block;
   }
-
   .visible-sp {
     display: none;
   }
-
   .container {
     display: flex;
     margin: 0 auto;
@@ -54,6 +54,9 @@ table {
 }
 .l-header {
   height: 217px;
+  /* ナビ開いてる時のバツボタン */
+  /* ナビメニュー内 */
+  /* ハンバーガーメニュー押してactiveクラスを付いたら表示する */
 }
 .l-header__text-wrapper {
   background-color: #00A0E9;
@@ -78,6 +81,12 @@ table {
   gap: 1ch;
   padding-top: 16px;
 }
+.l-header__svg-wrapper {
+  max-width: 176px;
+}
+.l-header__svg-wrapper svg {
+  width: 100%;
+}
 .l-header__img-wrapper02 {
   position: absolute;
   top: 65px;
@@ -95,7 +104,7 @@ table {
   margin: 0 auto;
   position: relative;
 }
-.l-header .burger-btn {
+.l-header__burger-btn {
   position: absolute;
   z-index: 3;
   top: 0;
@@ -104,44 +113,44 @@ table {
   height: 47px;
   cursor: pointer;
 }
-.l-header .burger-btn span {
+.l-header__burger-btn span {
   display: block;
   position: absolute;
   width: 30px;
   height: 5px;
   left: 0px;
   background-color: #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   transform: translate(8px, 0px);
 }
-.l-header .burger-btn span:nth-child(1) {
+.l-header__burger-btn span:nth-child(1) {
   top: 10px;
 }
-.l-header .burger-btn span:nth-child(2) {
+.l-header__burger-btn span:nth-child(2) {
   top: 21px;
 }
-.l-header .burger-btn span:nth-child(3) {
+.l-header__burger-btn span:nth-child(3) {
   top: 33px;
 }
-
-/* ナビ開いてる時のバツボタン */
-.burger-btn.active span:nth-child(1) {
+.l-header__burger-btn.active span:nth-child(1) {
   top: 20px;
   left: 8px;
   background: #fff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-
-.burger-btn.active span:nth-child(2),
-.burger-btn.active span:nth-child(3) {
+.l-header__burger-btn.active span:nth-child(2), .l-header__burger-btn.active span:nth-child(3) {
   top: 20px;
   left: 8px;
   background: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
-/* ナビメニュー内 */
-.burger-menu {
+.l-header__burger-menu {
   display: none;
   top: 0;
   left: 0;
@@ -151,48 +160,41 @@ table {
   transition: opacity 0.6s ease, visibility 0.6s ease;
   font-size: 2.4rem;
 }
-
-.burger-menu ul {
+.l-header__burger-menu ul {
   margin: 0 auto;
   padding: 0;
   width: 100%;
   padding-top: 47px;
 }
-.burger-menu ul .burger-menu__link:first-child {
+.l-header__burger-menu ul__burger-menu-link:first-child {
   padding-top: 28px;
 }
-
-.burger-menu__link {
+.l-header__burger-menu-link {
   list-style-type: none;
   padding: 0;
-  width: 100%;
+  width: 160px;
   transition: 0.4s all;
   padding-top: 7px;
 }
-
-.burger-menu__link:last-child {
+.l-header__burger-menu-link:last-child {
   padding-bottom: 0;
 }
-
-.burger-menu__link a {
+.l-header__burger-menu-link a {
   display: block;
   color: #333;
   height: 36px;
   padding-left: 1px;
   text-decoration: none;
 }
-.burger-menu__link a::before {
-  content: url(/public/assets/img/sp/グループ\ 51.svg);
+.l-header__burger-menu-link a::before {
+  content: url(https://takaki-blog.com/Designcomp_01/img/sp/グループ-51.svg);
   padding-right: 9px;
   vertical-align: middle;
 }
-
-/* ハンバーガーメニュー押してactiveクラスを付いたら表示する */
-nav.burger-menu.active {
+.l-header__burger-menu.active {
   display: block;
   visibility: visible;
 }
-
 .l-header.height {
   height: 559px;
 }
@@ -222,13 +224,20 @@ nav.burger-menu.active {
     padding-top: 6px;
     width: min(59.25vw, 948px);
   }
+  .l-header__img-wrapper01 img {
+    max-width: 248px;
+    width: 46%;
+  }
+  .l-header__svg-wrapper {
+    max-width: 300px;
+  }
   .l-header__img-wrapper03 {
     position: static;
     padding-top: 17px;
   }
   .l-header__img-wrapper03 img {
     max-width: 335px;
-    width: 100%;
+    width: 90%;
   }
   .l-header__menu {
     width: 92%;
@@ -253,6 +262,8 @@ nav.burger-menu.active {
     height: 5px;
     left: 0px;
     background-color: #fff;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
     transform: translate(8px, 0px);
   }
@@ -268,6 +279,9 @@ nav.burger-menu.active {
 }
 .l-footer {
   width: 100%;
+  /* ナビ開いてる時のバツボタン */
+  /* ナビメニュー内 */
+  /* ハンバーガーメニュー押してactiveクラスを付いたら表示する */
 }
 .l-footer__wrapper {
   display: flex;
@@ -280,6 +294,16 @@ nav.burger-menu.active {
 }
 .l-footer__wrapper img {
   transform: translate(14px, -1px);
+}
+.l-footer__img-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.l-footer__svg-wrapper {
+  max-width: 176px;
+}
+.l-footer__svg-wrapper svg {
+  width: 100%;
 }
 .l-footer__text {
   width: 100%;
@@ -295,7 +319,7 @@ nav.burger-menu.active {
   margin: 0 auto;
   position: relative;
 }
-.l-footer .burger-btn {
+.l-footer__burger-btn {
   position: absolute;
   z-index: 3;
   top: 0;
@@ -304,44 +328,44 @@ nav.burger-menu.active {
   height: 47px;
   cursor: pointer;
 }
-.l-footer .burger-btn span {
+.l-footer__burger-btn span {
   display: block;
   position: absolute;
   width: 30px;
   height: 5px;
   left: 0px;
   background-color: #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   transform: translate(8px, 0px);
 }
-.l-footer .burger-btn span:nth-child(1) {
+.l-footer__burger-btn span:nth-child(1) {
   top: 10px;
 }
-.l-footer .burger-btn span:nth-child(2) {
+.l-footer__burger-btn span:nth-child(2) {
   top: 21px;
 }
-.l-footer .burger-btn span:nth-child(3) {
+.l-footer__burger-btn span:nth-child(3) {
   top: 33px;
 }
-
-/* ナビ開いてる時のバツボタン */
-.burger-btn.active span:nth-child(1) {
+.l-footer__burger-btn.active span:nth-child(1) {
   top: 20px;
   left: 8px;
   background: #fff;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-
-.burger-btn.active span:nth-child(2),
-.burger-btn.active span:nth-child(3) {
+.l-footer__burger-btn.active span:nth-child(2), .l-footer__burger-btn.active span:nth-child(3) {
   top: 20px;
   left: 8px;
   background: #fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-
-/* ナビメニュー内 */
-.burger-menu {
+.l-footer__burger-menu {
   display: none;
   top: 0;
   left: 0;
@@ -351,50 +375,45 @@ nav.burger-menu.active {
   transition: opacity 0.6s ease, visibility 0.6s ease;
   font-size: 2.4rem;
 }
-
-.burger-menu ul {
+.l-footer__burger-menu ul {
   margin: 0 auto;
   padding: 0;
   width: 100%;
   padding-top: 47px;
 }
-.burger-menu ul .burger-menu__link:first-child {
+.l-footer__burger-menu ul__burger-menu-link:first-child {
   padding-top: 28px;
 }
-
-.burger-menu__link {
+.l-footer__burger-menu-link {
   list-style-type: none;
   padding: 0;
-  width: 100%;
+  width: 160px;
   transition: 0.4s all;
   padding-top: 7px;
 }
-
-.burger-menu__link:last-child {
+.l-footer__burger-menu-link:last-child {
   padding-bottom: 0;
 }
-
-.burger-menu__link a {
+.l-footer__burger-menu-link a {
   display: block;
   color: #333;
   height: 36px;
   padding-left: 1px;
   text-decoration: none;
 }
-.burger-menu__link a::before {
-  content: url(/public/assets/img/sp/グループ\ 51.svg);
+.l-footer__burger-menu-link a::before {
+  content: url(https://takaki-blog.com/Designcomp_01/img/sp/グループ-51.svg);
   padding-right: 9px;
   vertical-align: middle;
 }
-
-/* ハンバーガーメニュー押してactiveクラスを付いたら表示する */
-nav.burger-menu.active {
+.l-footer__burger-menu.active {
   display: block;
   visibility: visible;
 }
-
 .l-footer__wrapper.height {
   padding-top: 330px;
+  z-index: -1;
+  position: relative;
 }
 
 @media screen and (min-width: 641px) {
@@ -457,6 +476,9 @@ nav.burger-menu.active {
     padding-left: 50px;
     height: 46px;
     transform: translate(14px, 5px);
+  }
+  .l-footer__svg-wrapper {
+    max-width: 300px;
   }
   .l-footer__text {
     width: 100%;
@@ -716,7 +738,7 @@ nav.burger-menu.active {
   padding: 29px 0;
 }
 .p-sidebar__ttl {
-  width: 91.467vw;
+  width: 91.467%;
   height: 40px;
   font-size: 2.2rem;
   font-weight: bold;
@@ -760,14 +782,10 @@ nav.burger-menu.active {
 .p-sidebar table td {
   height: 81px;
   transform: translate(0, -5px);
-  background-image: linear-gradient(to right, #AAAAAA, #AAAAAA 2px, transparent 1px, transparent 3px);
-  /* 幅1の線を作る */
-  background-size: 3px 1px;
-  /* グラデーションの幅・高さを指定 */
-  background-position: left bottom;
-  /* 背景の開始位置を指定 */
-  background-repeat: repeat-x;
-  /* 横向きにのみ繰り返す */
+  background-image: linear-gradient(to right, #AAAAAA, #AAAAAA 2px, transparent 1px, transparent 3px); /* 幅1の線を作る */
+  background-size: 3px 1px; /* グラデーションの幅・高さを指定 */
+  background-position: left bottom; /* 背景の開始位置を指定 */
+  background-repeat: repeat-x; /* 横向きにのみ繰り返す */
 }
 .p-sidebar__blog-link {
   line-height: 2.3125;
@@ -849,3 +867,5 @@ nav.burger-menu.active {
     padding-left: 30px;
   }
 }
+
+/*# sourceMappingURL=common.css.map */
