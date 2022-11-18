@@ -3,7 +3,7 @@
 
 // Base (Mobile First)
 
-.c-section__inner {
+.c-inner {
   width: 100%;
   max-width: 345px;
   margin: 0 auto;
@@ -11,7 +11,7 @@
 }
 
 @include m.mq(pc) {
-  .c-section__inner {
+  .c-inner {
     width: 100%;
     max-width: 1010px;
     padding: 0;
