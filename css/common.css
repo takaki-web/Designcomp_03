@@ -796,6 +796,7 @@ table {
   border: 1px solid #cecebf;
   padding: 16px;
   background-color: #fff;
+  display: block;
 }
 .p-index-voice__img-wrapper {
   display: flex;
