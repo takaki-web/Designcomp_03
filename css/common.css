@@ -791,7 +791,7 @@ table {
     padding-left: min(0.75vw, 12px);
   }
 }
-.p-index-voice__card {
+.p-index-voice__permalink {
   margin-top: 24px;
   border: 1px solid #cecebf;
   padding: 16px;
@@ -824,17 +824,16 @@ table {
 
 @media screen and (min-width: 641px) {
   .p-index-voice__card {
-    display: flex;
-    padding: 25px;
-    padding-right: 22px;
-  }
-  .p-index-voice__permalink {
     width: 97.34%;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1ch;
+  }
+  .p-index-voice__permalink {
+    display: flex;
+    padding: 25px;
+    padding-right: 22px;
   }
   .p-index-voice__content {
     padding-top: 0;
