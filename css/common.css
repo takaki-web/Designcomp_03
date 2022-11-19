@@ -533,8 +533,8 @@ table {
   background-position: left bottom; /* 背景の開始位置を指定 */
   background-repeat: repeat-x; /* 横向きにのみ繰り返す */
 }
-.l-sidebar__blog-link {
-  line-height: 2.3125;
+.l-sidebar__blog-text {
+  line-height: 1.75;
   text-decoration: underline solid #00a0e9;
 }
 .l-sidebar__banner-wrapper {
@@ -550,6 +550,9 @@ table {
 }
 .l-sidebar__banner-store-wrapper {
   margin-top: 30px;
+}
+.l-sidebar__permalink {
+  display: block;
 }
 
 @media screen and (min-width: 641px) {
@@ -743,6 +746,9 @@ table {
   font-size: 2.2rem;
   line-height: 1.45;
   padding-bottom: 16px;
+}
+.p-index-news__permalink {
+  display: block;
 }
 
 @media screen and (min-width: 641px) {

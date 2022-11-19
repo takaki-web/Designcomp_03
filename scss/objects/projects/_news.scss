@@ -22,6 +22,9 @@
       padding-bottom: 16px;
     }
   }
+  &__permalink{
+    display: block;
+  }
 }
 
 @include m.mq(pc) {
