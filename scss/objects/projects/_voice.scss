@@ -6,8 +6,9 @@
 .p-index-voice {
   &__card {
     margin-top: 24px;
-    padding: 16px;
     border: 1px solid import.$color-frame;
+    padding: 16px;
+    background-color: import.$color-white;
   }
   &__img-wrapper {
     display: flex;
@@ -38,10 +39,17 @@
 @include m.mq(pc) {
   .p-index-voice {
     &__card {
+      display: flex;
       padding: 25px;
       padding-right: 22px;
+    }
+    &__permalink{
       width: 97.34%;
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1ch;
     }
     &__content {
       padding-top: 0;
