@@ -32,7 +32,10 @@
     line-height: 1.75;
     margin-bottom: 30px;
   }
-  &__date {
+  &__date{
+    padding-right: 1em;
+  }
+  &__tag-wrapper {
     text-align: right;
   }
 }

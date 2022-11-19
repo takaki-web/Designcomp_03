@@ -820,6 +820,9 @@ table {
   margin-bottom: 30px;
 }
 .p-index-voice__date {
+  padding-right: 1em;
+}
+.p-index-voice__tag-wrapper {
   text-align: right;
 }
 
