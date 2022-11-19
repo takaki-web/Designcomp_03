@@ -823,7 +823,8 @@ table {
   padding-right: 1em;
 }
 .p-index-voice__tag-wrapper {
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media screen and (min-width: 641px) {

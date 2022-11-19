@@ -36,7 +36,8 @@
     padding-right: 1em;
   }
   &__tag-wrapper {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
