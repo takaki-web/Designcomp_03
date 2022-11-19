@@ -3,7 +3,7 @@
 // Base (Mobile First)
 
 // sidebarセクション
-.l-index-sidebar {
+.l-sidebar {
   padding-top: 30px;
   &__movie-wrapper {
     padding: 29px 0;
@@ -66,7 +66,7 @@
   }
   &__blog-link {
     line-height: 2.3125;
-    border-bottom: 1px solid import.$color-blue;
+    text-decoration:underline solid import.$color-blue;
   }
   &__banner-wrapper {
     width: 100%;
@@ -85,7 +85,7 @@
 }
 
 @include m.mq(pc) {
-  .l-index-sidebar {
+  .l-sidebar {
     width: 258px;
     padding-top: 40px;
     &__movie {
