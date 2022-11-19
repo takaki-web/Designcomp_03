@@ -1,0 +1,22 @@
+@use "../foundation/import";
+@use "../mixin" as m;
+// Base (Mobile First)
+
+// mainセクション
+		.l-main{
+			background: import.$color-sdw 0% 0% no-repeat padding-box;
+			box-shadow: inset 0px 10px 10px import.$color-base;
+		}
+@include m.mq(pc) {
+	.l-main{
+		padding-bottom: 137px;
+		&__container{
+				display: flex;
+				margin: 0 auto;
+				flex-direction: row;
+				align-items: flex-start;
+				justify-content: center;
+				max-width: 1010px;
+			}
+	}
+}
