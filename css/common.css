@@ -513,29 +513,24 @@ table {
 .l-sidebar__store-text {
   line-height: 2.21;
 }
-.l-sidebar table {
+.l-sidebar__blog-container {
   color: #00a0e9;
   font-weight: bold;
   padding-bottom: 14px;
 }
-.l-sidebar table tr:first-child th {
-  padding: 0;
-}
-.l-sidebar table th {
-  padding-top: 11px;
+.l-sidebar__blog-date {
+  margin-top: 15px;
   font-weight: normal;
 }
-.l-sidebar table td {
+.l-sidebar__blog-heading {
+  line-height: 1.75;
+  -webkit-text-decoration: underline solid #00a0e9;
+  text-decoration: underline solid #00a0e9;
   height: 81px;
-  transform: translate(0, -5px);
   background-image: linear-gradient(to right, #aaaaaa, #aaaaaa 2px, transparent 1px, transparent 3px); /* 幅1の線を作る */
   background-size: 3px 1px; /* グラデーションの幅・高さを指定 */
   background-position: left bottom; /* 背景の開始位置を指定 */
   background-repeat: repeat-x; /* 横向きにのみ繰り返す */
-}
-.l-sidebar__blog-text {
-  line-height: 1.75;
-  text-decoration: underline solid #00a0e9;
 }
 .l-sidebar__banner-wrapper {
   width: 100%;
@@ -551,7 +546,7 @@ table {
 .l-sidebar__banner-store-wrapper {
   margin-top: 30px;
 }
-.l-sidebar__permalink {
+.l-sidebar__blog-permalink {
   display: block;
 }
 
@@ -573,14 +568,10 @@ table {
     font-size: 1.4rem;
     padding-top: 7px;
   }
-  .l-sidebar table th {
-    padding-top: 10px;
-  }
-  .l-sidebar table td {
+  .l-sidebar__blog-heading {
     height: 75px;
-    transform: translate(0, -3px);
   }
-  .l-sidebar__blog-link {
+  .l-sidebar__blog-permalink {
     line-height: 1.75;
   }
 }
@@ -731,16 +722,16 @@ table {
   padding-top: 20px;
   padding-bottom: 87px;
 }
-.p-index-news table {
+.p-index-news__wrapper {
   margin-top: 21px;
 }
-.p-index-news table th {
+.p-index-news__date {
   color: #aaaaaa;
   font-weight: normal;
   height: 24px;
   padding-bottom: 9px;
 }
-.p-index-news table td {
+.p-index-news__heading {
   color: #00a0e9;
   font-weight: bold;
   font-size: 2.2rem;
@@ -756,17 +747,17 @@ table {
     padding-top: 40px;
     padding-bottom: 87px;
   }
-  .p-index-news table {
+  .p-index-news__wrapper {
     width: 97.34%;
     margin-top: 21px;
   }
-  .p-index-news table th {
+  .p-index-news__date {
     color: #aaaaaa;
     font-weight: normal;
     height: 24px;
     padding-bottom: 9px;
   }
-  .p-index-news table td {
+  .p-index-news__heading {
     color: #00a0e9;
     font-weight: bold;
     font-size: 2.2rem;
