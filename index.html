@@ -170,7 +170,8 @@
           <!-- /.l-header__svg-wrapper -->
           <img
             class="visible-pc"
-            loading="lazy"
+            type='image/webp'
+            width='264' height='46'
             src="img/pc/tel-pc.webp"
             srcset="img/pc/tel-pc.webp 1x, img/pc/tel-pc@2x.webp 2x"
             alt="tel_btn"
@@ -179,30 +180,34 @@
         <!-- /.l-header__img-wrapper01 -->
         <picture class="l-header__img-wrapper02 visible-sp">
           <img
-            loading="lazy"
+            type='image/webp'
+            width='166' height='32'
             src="img/sp/tel2.webp"
             srcset="img/sp/tel2.webp 1x, img/sp/tel2@2x.webp 2x"
             alt="tel2"
           />
         </picture>
         <!-- /l-header__img-wrapper02 -->
-        <picture class="l-header__img-wrapper03">
+        <picture class='l-header__img-wrapper03'>
           <source
-            media="(min-width:641px)"
-            srcset="img/pc/reserve-pc.webp 1x, img/pc/reserve-pc@2x.webp 2x"
+          type='image/webp'
+          media='(min-width:641px)'
+          srcset='img/pc/reserve-pc.webp 1x,img/pc/reserve-pc@2x.webp 2x'
+          width='335' height='64'
+          />
+          <source
+          type='image/webp'
+          srcset='img/sp/reserve-header.webp 1x,img/sp/reserve-header@2x.webp 2x'
+          width='166' height='32'
           />
           <img
-            loading="lazy"
-            src="img/sp/reserve-header.webp"
-            srcset="
-              img/sp/reserve-header.webp    1x,
-              img/sp/reserve-header@2x.webp 2x
-            "
-            alt="reserve-btn"
+          src=img/sp/reserve-header.webp
+          alt='reserve'
+          width='166' height='32'
           />
-        </picture>
-        <!-- /l-header__img-wrapper03 -->
-      </div>
+          </picture>
+          <!-- /l-header__img-wrapper03 -->
+        </div>
       <!-- /.l-header__content-wrapper -->
       <div class="l-header__menu visible-sp">
         <!-- ここからハンバーガーメニュー -->
@@ -240,20 +245,26 @@
       </div>
       <!-- /.l-header__menu -->
     </header>
-    <picture class="p-index-fv__img-wrapper">
+    <picture class='p-index-fv__img-wrapper'>
       <source
-        media="(min-width:641px)"
-        srcset="img/pc/fv-pc.webp 1x, img/pc/fv-pc@2x.webp 2x"
+      type='image/webp'
+      media='(min-width:641px)'
+      srcset='img/pc/fv-pc.webp 1x,img/pc/fv-pc@2x.webp 2x'
+      width='1300' height='346'
+      />
+      <source
+      type='image/webp'
+      srcset='img/sp/fv-sp.webp 1x,img/sp/fv-sp@2x.webp 2x'
+      width='375' height='175'
       />
       <img
-        loading="lazy"
-        src="img/sp/fv-sp.webp"
-        srcset="img/sp/fv-sp.webp 1x, img/sp/fv-sp@2x.webp 2x"
-        alt="fv"
+      src=img/sp/fv-sp.webp
+      alt='fv'
+      width='375' height='175'
       />
-    </picture>
-    <!-- /.p-fv__img-wrapper -->
-    <div class="p-index-fv__nav-wrapper">
+      </picture>
+      <!-- /p-index-fv__img-wrapper -->
+      <div class="p-index-fv__nav-wrapper">
       <ul class="p-index-fv__nav-lists visible-pc">
         <li class="p-index-fv__nav-item"><a href="#">トップ</a></li>
         <!-- /.p-fv__nav-item -->
@@ -301,43 +312,63 @@
                 経験豊富なインストラクターがガイドしますので、お楽しみいただけます！
               </p>
               <!-- /.p-course__text -->
-              <picture class="p-index-course__img-wrapper01">
+              <picture class='p-index-course__img-wrapper01'>
                 <source
-                  media="(min-width:641px)"
-                  srcset="
-                    img/pc/course01-pc.webp    1x,
-                    img/pc/course01-pc@2x.webp 2x
-                  "
+                type='image/webp'
+                media='(min-width:641px)'
+                srcset='img/pc/course01-pc.webp 1x,img/pc/course01-pc@2x.webp 2x'
+                width='232' height='260'
                 />
-                <img loading='lazy' src=img/sp/course01-sp.webp srcset='
-                img/sp/course01-sp.webp 1x, img/sp/course01-sp@2x.webp 2x '
-                alt='course01' />
-              </picture>
-              <picture class="p-index-course__img-wrapper02">
                 <source
-                  media="(min-width:641px)"
-                  srcset="
-                    img/pc/course02-pc.webp    1x,
-                    img/pc/course02-pc@2x.webp 2x
-                  "
+                type='image/webp'
+                srcset='img/sp/course01-sp.webp 1x,img/sp/course01-sp@2x.webp 2x'
+                width='109' height='122'
                 />
-                <img loading='lazy' src=img/sp/course02-sp.webp srcset='
-                img/sp/course02-sp.webp 1x, img/sp/course02-sp@2x.webp 2x '
-                alt='course02' />
-              </picture>
-              <picture class="p-index-course__img-wrapper03">
+                <img
+                src=img/sp/course01-sp.webp
+                alt='course01'
+                width='109' height='122'
+                />
+                </picture>
+                <!-- /p-index-course__img-wrapper01 -->
+              <picture class='p-index-course__img-wrapper02'>
                 <source
-                  media="(min-width:641px)"
-                  srcset="
-                    img/pc/course03-pc.webp    1x,
-                    img/pc/course03-pc@2x.webp 2x
-                  "
+                type='image/webp'
+                media='(min-width:641px)'
+                srcset='img/pc/course02-pc.webp 1x,img/pc/course02-pc@2x.webp 2x'
+                width='232' height='260'
                 />
-                <img loading='lazy' src=img/sp/course03-sp.webp srcset='
-                img/sp/course03-sp.webp 1x, img/sp/course03-sp@2x.webp 2x '
-                alt='course03' />
-              </picture>
-              <!-- /p-course__img-wrapper -->
+                <source
+                type='image/webp'
+                srcset='img/sp/course02-sp.webp 1x,img/sp/course02-sp@2x.webp 2x'
+                width='109' height='122'
+                />
+                <img
+                src=img/sp/course02-sp.webp
+                alt='course02'
+                width='109' height='122'
+                />
+                </picture>
+                <!-- /p-index-course__img-wrapper02 -->
+              <picture class='p-index-course__img-wrapper03'>
+                <source
+                type='image/webp'
+                media='(min-width:641px)'
+                srcset='img/pc/course03-pc.webp 1x,img/pc/course03-pc@2x.webp 2x'
+                width='232' height='260'
+                />
+                <source
+                type='image/webp'
+                srcset='img/sp/course03-sp.webp 1x,img/sp/course03-sp@2x.webp 2x'
+                width='109' height='122'
+                />
+                <img
+                src=img/sp/course03-sp.webp
+                alt='course03'
+                width='109' height='122'
+                />
+                </picture>
+                <!-- /p-index-course__img-wrapper03 -->
             </div>
             <!-- /.c-inner -->
           </section>
@@ -349,7 +380,10 @@
               <div class="p-index-voice__card">
                 <a href="" class="p-index-voice__permalink">
                   <picture class="p-index-voice__img-wrapper">
-                    <img loading='lazy' src=img/component/voice1.webp srcset='
+                    <img
+                    type='image/webp'
+                    width='178' height='178'
+                     src=img/component/voice1.webp srcset='
                     img/component/voice1.webp 1x, img/component/voice1@2x.webp
                     2x ' alt='voice1' />
                   </picture>
@@ -383,22 +417,25 @@
         <!-- /.l-main__sub-container -->
         <aside class="l-sidebar">
           <div class="c-inner">
-            <picture class="l-sidebar__img-wrapper">
+            <picture class='l-sidebar__img-wrapper l-sidebar__btn-img-wrapper'>
               <source
-                media="(min-width:641px)"
-                srcset="
-                  img/pc/reserve-side-pc.webp    1x,
-                  img/pc/reserve-side-pc@2x.webp 2x
-                "
+              type='image/webp'
+              media='(min-width:641px)'
+              srcset='img/pc/reserve-side-pc.webp 1x,img/pc/reserve-side-pc@2x.webp 2x'
+              width='258' height='49'
+              />
+              <source
+              type='image/webp'
+              srcset='img/sp/reserve-sp.webp 1x,img/sp/reserve-sp@2x.webp 2x'
+              width='342' height='65'
               />
               <img
-                loading="lazy"
-                src="img/sp/reserve-sp.webp"
-                srcset="img/sp/reserve-sp.webp 1x, img/sp/reserve-sp@2x.webp 2x"
-                alt="reserve-btn"
+              src=img/sp/reserve-sp.webp
+              alt='reserve-btn'
+              width='342' height='65'
               />
-            </picture>
-            <!-- /p-sidebar__img-wrapper -->
+              </picture>
+              <!-- /l-sidebar__img-wrapper -->
             <div class="l-sidebar__movie-wrapper">
               <p class="l-sidebar__ttl">体験の様子を見る</p>
               <!-- /.p-sidebar__ttl -->
@@ -419,18 +456,25 @@
             <div class="l-sidebar__store-wrapper">
               <p class="l-sidebar__ttl" id="store">店舗案内</p>
               <!-- /.p-sidebar__ttl -->
-              <picture class="l-sidebar__img-wrapper">
-                <source
-                  media="(min-width:641px)"
-                  srcset="img/pc/store-pc.webp 1x, img/pc/store-pc@2x.webp 2x"
-                />
-                <img
-                  loading="lazy"
-                  src="img/sp/store-sp.webp"
-                  srcset="img/sp/store-sp.webp 1x, img/sp/store-sp@2x.webp 2x"
-                  alt="store"
-                />
+              <picture class='l-sidebar__img-wrapper l-sidebar__store-img-wrapper'>
+              <source
+              type='image/webp'
+              media='(min-width:641px)'
+              srcset='img/pc/store-pc.webp 1x,img/pc/store-pc@2x.webp 2x'
+              width='258' height='172'
+              />
+              <source
+              type='image/webp'
+              srcset='img/sp/store-sp.webp 1x,img/sp/store-sp@2x.webp 2x'
+              width='343' height='228'
+              />
+              <img
+              src=img/sp/store-sp.webp
+              alt='store'
+              width='343' height='228'
+              />
               </picture>
+              <!-- /l-sidebar__img-wrapper -->
               <p class="l-sidebar__store-text">
                 098-XXX-XXXX<br />沖縄県ＸＸＸＸＸＸＸＸＸＸＸ<br />営業時間：9:00～18:00
               </p>
@@ -468,24 +512,26 @@
             <!-- /.p-sidebar__banner-wrapper -->
             <div class="l-sidebar__banner-store-wrapper">
               <a href="" class="l-sidebar__banner-store">
-                <picture class="l-sidebar__img-wrapper">
+                <picture class='l-sidebar__img-wrapper l-sidebar__online-img-wrapper'>
                   <source
-                    media="(min-width:641px)"
-                    srcset="
-                      img/pc/online-store-pc.webp    1x,
-                      img/pc/online-store-pc@2x.webp 2x
-                    "
+                  type='image/webp'
+                  media='(min-width:641px)'
+                  srcset='img/pc/online-store-pc.webp 1x,img/pc/online-store-pc@2x.webp 2x'
+                  width='258' height='80'
+                  />
+                  <source
+                  type='image/webp'
+                  srcset='img/sp/online-store-sp.webp 1x,img/sp/online-store-sp@2x.webp 2x'
+                  width='343' height='106'
                   />
                   <img
-                    loading="lazy"
-                    src="img/sp/online-store-sp.webp"
-                    srcset="
-                      img/sp/online-store-sp.webp    1x,
-                      img/sp/online-store-sp@2x.webp 2x
-                    "
-                    alt="online-store"
+                  src=img/sp/online-store-sp.webp
+                  alt='online-store'
+                  width='343' height='106'
                   />
-                </picture> </a
+                  </picture>
+                  <!-- /l-sidebar__img-wrapper -->
+                </a
               ><!-- /.p-sidebar__banner-store -->
             </div>
             <!-- /.p-sidebar__banner-store-wrapper -->
@@ -499,29 +545,44 @@
       <section class="p-index-contact">
         <div class="c-inner">
           <div class="p-index-contact__wrapper" id="contact">
-            <picture
-              class="p-index-contact__img-wrapper p-contact__img-wrapper01"
-            >
+            <picture class='p-index-contact__img-wrapper p-contact__img-wrapper01'>
               <source
-                media="(min-width:641px)"
-                srcset="img/pc/tel-pc.webp 1x, img/pc/tel-pc@2x.webp 2x"
+              type='image/webp'
+              media='(min-width:641px)'
+              srcset='img/pc/tel-pc.webp 1x,img/pc/tel-pc@2x.webp 2x'
+              width='264' height='46'
               />
-              <img loading='lazy' src=img/sp/tel-sp.webp srcset='
-              img/sp/tel-sp.webp 1x, img/sp/tel-sp@2x.webp 2x ' alt='tel' />
-            </picture>
-            <!-- /p-contact__img-wrapper01 -->
-            <picture
-              class="p-index-contact__img-wrapper p-contact__img-wrapper02"
-            >
               <source
-                media="(min-width:641px)"
-                srcset="img/pc/contact-pc.webp 1x, img/pc/contact-pc@2x.webp 2x"
+              type='image/webp'
+              srcset='img/sp/tel-sp.webp 1x,img/sp/tel-sp@2x.webp 2x'
+              width='264' height='46'
               />
-              <img loading='lazy' src=img/sp/contact-sp.webp srcset='
-              img/sp/contact-sp.webp 1x, img/sp/contact-sp@2x.webp 2x '
-              alt='contact' />
-            </picture>
-            <!-- /p-contact__img-wrapper02 -->
+              <img
+              src=img/sp/tel-sp.webp
+              alt='tel'
+              width='264' height='46'
+              />
+              </picture>
+              <!-- /p-index-contact__img-wrapper -->
+            <picture class='p-index-contact__img-wrapper p-contact__img-wrapper02'>
+              <source
+              type='image/webp'
+              media='(min-width:641px)'
+              srcset='img/pc/contact-pc.webp 1x,img/pc/contact-pc@2x.webp 2x'
+              width='335' height='64'
+              />
+              <source
+              type='image/webp'
+              srcset='img/sp/contact-sp.webp 1x,img/sp/contact-sp@2x.webp 2x'
+              width='335' height='64'
+              />
+              <img
+              src=img/sp/contact-sp.webp
+              alt='contact'
+              width='335' height='64'
+              />
+              </picture>
+              <!-- /p-index-contact__img-wrapper -->
           </div>
           <!-- /.p-contact-wrapper -->
         </div>
@@ -695,12 +756,21 @@
           <!-- /.l-footer__svg-wrapper -->
 
           <source
-            media="(min-width:641px)"
-            srcset="img/pc/tel-pc.webp 1x, img/pc/tel-pc@2x.webp 2x"
+          type='image/webp'
+          media='(min-width:641px)'
+          srcset='img/pc/tel-pc.webp 1x,img/pc/tel-pc@2x.webp 2x'
+          width='264' height='46'
           />
-          <img loading='lazy' src=img/sp/tel-footer-sp.webp srcset='
-          img/sp/tel-footer-sp.webp 1x, img/sp/tel-footer-sp@2x.webp 2x '
-          alt='tel' />
+          <source
+          type='image/webp'
+          srcset='img/sp/tel-footer-sp.webp 1x,img/sp/tel-footer-sp@2x.webp 2x'
+          width='338' height='58'
+          />
+          <img
+          src=img/sp/tel-footer-sp.webp
+          alt='tel'
+          width='338' height='58'
+          />
         </picture>
         <!-- /l-footer__img-wrapper -->
         <p class="l-footer__text">©Scuba Marine. All Rights Reserved.</p>
@@ -708,7 +778,6 @@
       </div>
       <!-- /.l-footer__wrapper -->
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

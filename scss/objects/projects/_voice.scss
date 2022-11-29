@@ -16,6 +16,11 @@
     align-items: center;
     justify-content: center;
     transform: translate(-4px, 0);
+    img{
+      max-width: 100%;
+      aspect-ratio: auto 178/178;
+      height: auto;
+    }
   }
   &__content {
     padding-top: 16px;

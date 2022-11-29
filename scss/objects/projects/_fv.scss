@@ -10,11 +10,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    img{
+      max-width: 100%;
+      aspect-ratio: auto 375/175;
+      height: auto;
+    }
   }
 }
 
 @include m.mq(pc) {
   .p-index-fv {
+    &__img-wrapper {
+      img{
+        aspect-ratio: auto 1300/346;
+      }
+    }
+
     &__nav-wrapper {
       width: 100vw;
       height: 95px;

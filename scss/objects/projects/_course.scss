@@ -10,21 +10,50 @@
     line-height: 1.75;
     padding-bottom: 16px;
   }
+  &__img-wrapper01 {
+    img{
+      max-width: 100%;
+      aspect-ratio: auto 109/122;
+      height: auto;
+    }
+  }
+
   &__img-wrapper02 {
     padding-left: 3px;
+    img{
+      max-width: 100%;
+      aspect-ratio: auto 109/122;
+      height: auto;
+    }
   }
   &__img-wrapper03 {
     padding-left: 2px;
+    img{
+      max-width: 100%;
+      aspect-ratio: auto 109/122;
+      height: auto;
+    }
   }
 }
 
 @include m.mq(pc) {
   .p-index-course {
+    &__img-wrapper01 {
+      img{
+        aspect-ratio: auto 232/260;
+      }
+    }
     &__img-wrapper02 {
       padding-left: min(0.75vw, 12px); //最大値を設定したい場合
+      img{
+        aspect-ratio: auto 232/260;
+      }
     }
     &__img-wrapper03 {
       padding-left: min(0.75vw, 12px); //最大値を設定したい場合
+      img{
+        aspect-ratio: auto 232/260;
+      }
     }
   }
 }
