@@ -106,14 +106,11 @@
     font-size: 2.4rem;
   }
 
-  &__burger-menu ul {
+  &__burger-menu-lists{
     margin: 0 auto;
     padding: 0;
     width: 100%;
     padding-top: 47px;
-    &__burger-menu-link:first-child {
-      padding-top: 28px;
-    }
   }
 
   &__burger-menu-link {
@@ -123,6 +120,10 @@
     transition: 0.4s all;
     padding-top: 7px;
   }
+  &__burger-menu-link:first-child {
+    padding-top: 28px;
+  }
+
   &__burger-menu-link:last-child {
     padding-bottom: 0;
   }
